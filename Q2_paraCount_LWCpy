@@ -1,0 +1,14 @@
+# Accept a paragraph and count number of lines, words, and characters.
+
+import sys 
+
+print("Enter: ")
+mypara = sys.stdin.read().strip()
+
+lines = len(mypara.split('\n'))
+words = len(mypara.split())
+characters = len(mypara.replace(" ",""))
+
+print(f'Number of Lines: {lines}')
+print(f'Number of Words: {words}')
+print(f'Number of Characters: {characters}')
